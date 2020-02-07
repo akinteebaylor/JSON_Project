@@ -38,7 +38,7 @@ def tee (a,b,c,CC):
     
     from plotly.graph_objs import Scattergeo, Layout
     from plotly import offline
-    data =[dict(type='scattergeo',lon=a,lat=b, mode = 'markers', marker = dict(size = 30,colorscale= 'thermal', 
+    data =[dict(type='scattergeo',lon=a,lat=b, mode = 'markers', marker = dict(size = 30,colorscale= 'reds', 
     color = c, colorbar = dict(title = 'Brightness',titleside = 'top',tickmode = 'array',)))]
 
     layout = dict(title = CC,geo = dict(showland = True, lataxis = dict(range=[-38.798,-10.154]),
